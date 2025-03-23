@@ -4,6 +4,7 @@ import { Suspense, useEffect } from "react";
 import { Effect } from "./utils/ParticleText";
 import Loader from "./components/Loader";
 import { useLoading } from "./LoadingContextProvider";
+import Socials from "./components/Socials";
 
 function App() {
   const { isLoading } = useLoading();
@@ -29,7 +30,7 @@ function App() {
         window.innerWidth > 1000 ? 100 : window.innerWidth > 630 ? 80 : 40;
       const effect = new Effect(ctx, canvas.width, canvas.height, fontSize);
 
-      await effect.wrapText("LKSHAY mANCHANDA");
+      await effect.wrapText("LAKSHAY MANCHANDA");
       function animate() {
         if (!ctx) return;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -57,7 +58,7 @@ function App() {
           </Suspense>
         </Canvas>
       </section>
-      {/* <section id="main"></section> */}
+      <Socials />
     </div>
   );
 }
