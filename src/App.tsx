@@ -29,7 +29,7 @@ function App() {
         window.innerWidth > 1000 ? 100 : window.innerWidth > 630 ? 80 : 40;
       const effect = new Effect(ctx, canvas.width, canvas.height, fontSize);
 
-      await effect.wrapText("LKSHAY mANCHANDA", 100, 100);
+      await effect.wrapText("LKSHAY mANCHANDA");
       function animate() {
         if (!ctx) return;
         ctx.clearRect(0, 0, canvas.width, canvas.height);

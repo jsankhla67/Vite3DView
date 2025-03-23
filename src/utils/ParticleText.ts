@@ -100,7 +100,7 @@ export class Effect {
     });
   }
 
-  async wrapText(text: string, x: number, y: number) {
+  async wrapText(text: string) {
     await document.fonts.load(`${this.fontSize}px Anton`);
     //canvas settings
     this.context.fillStyle = "#000000";
