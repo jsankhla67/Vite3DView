@@ -4,7 +4,7 @@ import { IconBrandWhatsapp } from "@tabler/icons-react";
 const Socials = () => {
   return (
     <div className="flex max-sm:flex-col gap-5 absolute bottom-5 z-10">
-      <div className="flex gap-5">
+      <div className="flex gap-5 items-center justify-center">
         <a
           href={"https://github.com/Lakshayyy-m"}
           target="_blank"
@@ -27,7 +27,7 @@ const Socials = () => {
           <User className="group-hover:text-white transition-colors" />
         </a>
       </div>
-      <div className="flex gap-5 ms-10">
+      <div className="flex gap-5 ms-10 items-center justify-center">
         <a
           href={"https://wa.me/16046213916"}
           target="_blank"
