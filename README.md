@@ -1,55 +1,77 @@
-# React + TypeScript + Vite
+# Vite3DView
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal 3D landing page built using **React**, **TypeScript**, and **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- React  
+- TypeScript  
+- Vite  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 🛠 Prerequisites
+
+Make sure the following are installed on your system:
+
+- **Node.js** (v16 or higher): [https://nodejs.org](https://nodejs.org)  
+  To verify:
+  ```bash
+  node -v
+  npm -v
+  ```
+
+- **Vite**
+  ```bash
+  npm install -g vite
+  ```
+
+- **React & React DOM**
+  (Only needed if you're setting up a project manually — this is already included in this repo)
+  ```bash
+  npm install react react-dom
+  ```
+
+- **TypeScript**
+  ```bash
+  npm install -D typescript
+  ```
+
+- **Type Definitions for React (optional, already included here)**
+  ```bash
+  npm install -D @types/react @types/react-dom
+  ```
+
+---
+
+### 🚀 Clone and Run
+
+```bash
+git clone https://github.com/jsankhla67/Vite3DView.git
+cd Vite3DView
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open your browser at:  
+[http://localhost:5173](http://localhost:5173)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 📁 Build for Production
+
+```bash
+npm run build
+npm run preview
 ```
-# landing3d
+
+---
+
+## 📄 License
+
+This project is developed and maintained by **Jatin Sankhla** (`@jsankhla67`).  
+All rights reserved.  
+**This code is not licensed for reuse, distribution, or commercial use without explicit permission.**
