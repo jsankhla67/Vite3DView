@@ -72,6 +72,6 @@ npm run preview
 
 ## 📄 License
 
-This project is developed and maintained by **Jatin Sankhla** (`@jsankhla67`).  
+This project is developed and maintained by **Jatin Sankhla**(`@jsankhla67`). and my friend **lakshay manchanda**.
 All rights reserved.  
 **This code is not licensed for reuse, distribution, or commercial use without explicit permission.**
