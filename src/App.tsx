@@ -30,7 +30,7 @@ function App() {
         window.innerWidth > 1000 ? 100 : window.innerWidth > 630 ? 80 : 40;
       const effect = new Effect(ctx, canvas.width, canvas.height, fontSize);
 
-      await effect.wrapText("LAKSHAY MANCHANDA");
+      await effect.wrapText("JATIN SANKHLA");
       function animate() {
         if (!ctx) return;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -51,7 +51,9 @@ function App() {
       id="main"
       className="flex flex-col w-full relative items-center justify-center"
     >
-      <section className="bg-purple-600 h-screen w-full ">
+   <section className="bg-gradient-to-br from-[#A2CFFE] via-[#A2CFFE] to-[#A2CFFE] h-screen w-full">
+
+
         <Canvas>
           <Suspense fallback={<Loader />}>
             <Scene />
